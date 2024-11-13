@@ -22,6 +22,12 @@ export default defineType({
       type: 'text',
       rows: 6,
     }),
+    {
+      name: 'images',
+      title: 'Project Images',
+      type: 'array',
+      of: [{ type: 'image' }]
+    },
     defineField({
       name: 'image',
       title: 'Project Image',
